@@ -44,7 +44,7 @@ let jsonDatabase = [
     "waterTemp" : "85 - 90 Celsius",
     "popularType" : "Junshan Silver Needle Tea",
     "Effect" : "Helps to prevent cancer, sterilization, anti-inflammatory.",
-    "picture_url" : "https://www.lvchashuo.com/uploads/allimg/210526/13_210526112641_1.jpg"
+    "picture_url" : "http://p6-open.byteimg.com/img/dfic-imagehandler/957b3176-6200-468e-b95c-ba6250e2a01b~640x0.jpeg"
   },
   //Sixth one
   {
