@@ -63,26 +63,29 @@ for (var i=0; i<jsonDatabase.length; i++){
 
 function executePortfolio(dataValue) {
   let newbodyContent = document.createElement("DIV");
-  newbodyContent.style.backgroundColor = dataValue('color');
+  newbodyContent.style.backgroundColor = dataValue['color'];
   newbodyContent.classList.add('portfolioContainer');
 
   let newbodyContentTitle = document.createElement("H3");
-  newbodyContentTitle.innerText = dataValue('teaTitle');
+  newbodyContentTitle.innerText = dataValue['teaTitle'];
   newbodyContent.appendChild(newbodyContentTitle);
 
   let newbodyContentWater = document.createElement("H4");
-  newbodyContentWater.innerText = "Best Water Temperature: " + dataValue('waterTemp');
+  newbodyContentWater.innerText = "Best Water Temperature: " + dataValue['waterTemp'];
   newbodyContent.appendChild(newbodyContentWater);
 
   let newbodyContentPopular = document.createElement("H4");
-  newbodyContentPopular.innerText = "Popular Type: " + dataValue('popularType');
+  newbodyContentPopular.innerText = "Popular Type: " + dataValue['popularType'];
   newbodyContent.appendChild(newbodyContentPopular);
 
   let newbodyContentEffect = document.createElement("H4");
-  newbodyContentEffect.innerText = "Effect: " + dataValue('Effect');
+  newbodyContentEffect.innerText = "Effect: " + dataValue['Effect'];
   newbodyContent.appendChild(newbodyContentEffect);
 
   let newImg = document.createElement("IMG");
+  newImg.classList.add("footerImage");
+  newImg.src = dataValue['picture_url'];
+  newbodyContent.appendChild(newImg);
 
-  contentGridElement.appendChild(newContentElement);
+  bodyContent.appendChild(newbodyContent);
 }
